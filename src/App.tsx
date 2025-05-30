@@ -117,7 +117,7 @@ export const App: React.FC = () => {
             <option value="0" disabled>
               Choose a user
             </option>
-            {usersWithTasks.map(user => {
+            {users.map(user => {
               return (
                 <option key={user.id} value={user.id}>
                   {user.name}
