@@ -1,4 +1,5 @@
 /* eslint-disable no-console */
+/*neslint-disable no-console */
 import { TodoWithUser } from '../TodoList';
 import classNames from 'classnames';
 import { UserInfo } from '../UserInfo';
@@ -11,7 +12,6 @@ export const TodoInfo: React.FC<Props> = ({ todo }) => {
 
   return (
     <article
-      key={todo.userId}
       data-id={todo.id}
       className={classNames('TodoInfo', {
         'TodoInfo--completed': todo.completed,
